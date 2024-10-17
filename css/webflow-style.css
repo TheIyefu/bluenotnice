@@ -3034,6 +3034,13 @@ button:hover .cursor {
   /* Center the cursor on hover */
 }
 
+/* Hide the custom cursor on touch devices */
+@media (pointer: coarse) {
+  .cursor-wrapper {
+    display: none;
+    /* Hide cursor wrapper on touch devices */
+  }
+}
 
 ::-webkit-scrollbar {
   width: 12px;
